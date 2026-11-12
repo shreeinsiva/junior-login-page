@@ -1,0 +1,265 @@
+
+/* ================================
+   1. MAIN PAGE BACKGROUND
+================================ */
+
+/*.login-page {
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 32px 20px;
+
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(59, 130, 246, 0.25),
+      transparent 38%
+    ),
+    linear-gradient(
+      135deg,
+      #0f172a,
+      #172554,
+      #1e3a8a
+    );
+}*/
+
+
+/* ================================
+   2. LOGIN CARD
+================================ */
+
+.login-card {
+  width: 100%;
+  max-width: 1000px;
+
+  padding: 100px;
+
+  background-color: #ffffff;
+
+  border-radius: 50px;
+
+  box-shadow:
+    0 24px 70px rgba(2, 6, 23, 0.28);
+}
+
+
+/* ================================
+   3. LOGIN HEADING
+================================ */
+
+.login-heading {
+  margin-bottom: 30px;
+}
+
+.eyebrow {
+  color: #2563eb;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 12px;
+}
+
+.login-heading h1 {
+  color: #0f172a;
+
+  font-size: 30px;
+  line-height: 1.2;
+
+  margin-bottom: 10px;
+}
+
+.login-heading p:not(.eyebrow) {
+  color: #64748b;
+  font-size: 14px;
+}
+
+
+/* ================================
+   4. FORM LAYOUT
+================================ */
+
+.form-message {
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.form-message.error {
+  color: #dc2626;
+}
+
+.form-message.success {
+  color: #16a34a;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
+
+.form-group label {
+  color: #334155;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  height: 52px;
+
+  padding: 0 15px;
+
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+
+  background-color: #ffffff;
+
+  color: #172033;
+
+  font-size: 14px;
+
+  outline: none;
+
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input::placeholder {
+  color: #94a3b8;
+}
+
+
+/* ================================
+   5. INPUT FOCUS EFFECT
+================================ */
+
+.form-group input:focus {
+  border-color: #2563eb;
+
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.12);
+}
+
+
+/* ================================
+   6. REMEMBER ME + FORGOT PASSWORD
+================================ */
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 12px;
+  font-size: 13px;
+}
+
+.form-options label {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #475569;
+  cursor: pointer;
+}
+
+.form-options input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+
+  accent-color: #2563eb;
+}
+
+.form-options a {
+  color: #2563eb;
+
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.form-options a:hover {
+  text-decoration: underline;
+}
+
+
+/* ================================
+   7. LOGIN BUTTON
+================================ */
+
+.login-button {
+  width: 100%;
+  min-height: 52px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: linear-gradient(
+    135deg,
+    #2563eb,
+    #1d4ed8
+  );
+
+  color: #ffffff;
+
+  font-size: 15px;
+  font-weight: 600;
+
+  box-shadow: 0 8px 18px rgba(37, 99, 235, 0.20);
+
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+
+  box-shadow: 0 12px 22px rgba(37, 99, 235, 0.30);
+}
+.form-message {
+  color: #dc2626;
+  font-size: 13px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+
+/* ================================
+   8. FOOTER
+================================ */
+
+.login-footer {
+  margin-top: 28px;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+  text-align: center;
+}
+
+
+/* ================================
+   9. RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 480px) {
+
+  .login-card {
+    padding: 28px 22px;
+    border-radius: 18px;
+  }
+
+  .login-heading h1 {
+    font-size: 26px;
+  }
+
+  .form-options {
+    font-size: 12px;
+  }
+
+}
